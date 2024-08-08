@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7</title>
+    <style>
+        input{
+            width: 220px;
+            height: 30px;
+            border-radius: 10px;
+            padding-left: 1%;
+        }
+        button{
+            width: 120px;
+            height: 35px;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="ans">Welcome to My Website..</h1>
+    <input type="text" id="data">
+    <button onclick="changeText()">Click</button>
+
+
+    <script>
+        function changeText(){
+
+            let txt = document.getElementById("data").value
+
+            document.getElementById("ans").innerHTML = `${txt}`; 
+
+        }
+    </script>
+</body>
+</html> 
+

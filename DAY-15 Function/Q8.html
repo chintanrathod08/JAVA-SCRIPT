@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8</title>
+    <style>
+        input{
+            width: 220px;
+            height: 30px;
+            border-radius: 10px;
+            padding-left: 1%;
+        }
+        button{
+            width: 120px;
+            height: 35px;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+
+     <h1 id="ans">Welcome!..</h1>
+     <input type="text" id="data"> <br> <br>
+     <button onclick="changeText()">Change Txt</button>
+     <button onclick="resetText()">Reset Txt</button>
+ 
+
+
+
+    <script>
+        
+        function changeText(){
+
+          let txt = document.getElementById("data").value
+
+        document.getElementById("ans").innerHTML = `${txt}`; 
+
+       }
+
+
+       function resetText(){
+
+         document.getElementById("ans").innerHTML = `Welcome!`; 
+
+       }
+        
+    </script>
+
+</body>
+</html>

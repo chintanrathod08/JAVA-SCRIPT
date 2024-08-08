@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8</title>
+    <style>
+        input{
+            width: 220px;
+            height: 30px;
+            border-radius: 10px;
+            padding-left: 1%;
+        }
+        button{
+            width: 120px;
+            height: 35px;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: skyblue;
+            color: black;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    
+
+     <h1 id="ans">Welcome to My Website</h1>
+     <br>
+     <button onclick="changeColor()">Change Color</button>
+     <button onclick="resetText()">Reset Color</button>
+ 
+
+
+
+    <script>
+        
+        function changeColor(){
+
+          
+        document.getElementById("ans").style.color = "skyblue"; 
+
+       }
+
+
+       function resetText(){
+
+         document.getElementById("ans").style.color = "Black"; 
+
+       }
+        
+    </script>
+
+</body>
+</html>
