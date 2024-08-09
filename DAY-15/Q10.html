@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q6</title>
+    <title>Q10</title>
     <style>
         input{
             width: 220px;
@@ -18,14 +18,25 @@
         }
     </style>
 </head>
-
 <body>
+    
+    <label for="">Enter Any Number :-</label><br><br>
+    <input type="text" placeholder="" id="data"> <br><br>
+    <button onclick="calculateSquare()">Click</button>
+    
 
-    <input type="text" id="num"><br><br>
-    <button onclick="isPrime()">Click</button>
-    <h2 id="ans"></h2>
+    <script>
 
-    <script src="Q6.js"></script>
+        function calculateSquare(){
+
+            let a = document.getElementById("data").value
+
+            let square =  a * a;
+
+            alert(`${a} Sqaure is : ${square}`)
+
+        } 
+
+    </script>
 </body>
-
 </html>

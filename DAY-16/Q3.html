@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+    <style>
+        input{
+            width: 200px;
+            height: 30px;
+            border-radius: 15px;
+            padding-left: 1%;
+        }
+        button{
+            width: 120px;
+            height: 35px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" name="" id="data">
+    <button onclick="str()">Click</button>
+    <h2 id="ans"></h2>
+
+
+    <script>
+
+        function str() {
+
+
+
+            let d = document.getElementById("data").value
+
+            let n = 0;
+
+            for (let x = 0; x <= d.length; x++) {
+                if (d[x] == "a" || d[x] == "e" || d[x] == "i" || d[x] == "o" || d[x] == "u") {
+                    n++
+                }
+            }
+
+            
+            
+            document.getElementById("ans").innerHTML = `${n}`
+            // console.log(n);
+            
+        }
+        
+
+
+    </script>
+
+</body>
+
+</html>
