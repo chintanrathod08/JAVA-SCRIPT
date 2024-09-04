@@ -4,4 +4,4 @@ let hourly_wage = 15, hours_worked = 40, weekly_salary;
 
 weekly_salary = hourly_wage * hours_worked;
 
-console.log("Weekly salary is : ",weekly_salary);
+console.log("Weekly salary is :",weekly_salary);
