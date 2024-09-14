@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <style>
+        .main{
+            width: 100%;
+            height: 100vh;
+            /* border: 1px solid red ; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #singupPage{
+            border: 1px solid black;
+            padding: 30px;
+            border-radius: 10px;
+        }
+       
+        #loginPage{
+         display: none;
+         border: 1px solid black;
+        padding: 30px;
+         border-radius: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="main">
+
+    <div id="singupPage">
+        <h2>Singup</h2>
+        <form id="singupForm">
+
+            <input type="text" placeholder="Enter user name" id="user"><br> 
+            <span id="userText"></span><br><br>
+
+            <input type="text" placeholder="Enter your mail ID" id="mail"><br>
+            <span id="Email"></span><br><br>
+            
+            <input type="text" placeholder="Enter password" id="pass"><br>
+            <span id="Passwrd"></span><br><br>
+            
+            <input type="submit"><br><br>
+                
+            <a href="" id="swap1">New to My Website? Login Please</a>
+        </form>
+ 
+    </div>
+
+
+    <div id="loginPage">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" placeholder="Reenter mail ID" id="maillogin">
+            <span id="EmailloginText"></span><br><br>
+
+            <input type="text" placeholder="Reenter password" id="passlogin">
+            <span id="PasswrdloginText"></span><br><br>
+
+            <input type="submit"><br><br>
+            <a href="" id="swap2">Create an account</a>
+        </form>
+
+    </div>
+   
+</div>
+
+<script src="/script.js"></script>
+</body>
+</html>
