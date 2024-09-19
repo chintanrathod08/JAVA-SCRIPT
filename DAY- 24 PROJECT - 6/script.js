@@ -1,6 +1,6 @@
 let arr = [
     
-    "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/homepage_5_vKR0TF5.jpg?format=webp&w=1500&dpr=1.3",
+   "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/homepage_5_vKR0TF5.jpg?format=webp&w=1500&dpr=1.3",
     
     "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/homepage_banner_-_Copy_copy.jpg?format=webp&w=1500&dpr=1.3",
 
@@ -12,7 +12,6 @@ let arr = [
    
     "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/homepage_banner_copy_0BT5EUk.jpg?format=webp&w=1500&dpr=1.3"
 
-    
 ]   
 
 

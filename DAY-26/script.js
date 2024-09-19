@@ -1,4 +1,5 @@
 class car{
+   
     constructor (brand,model,year,color){
         this.brand = brand,
         this.model = model,
@@ -7,16 +8,15 @@ class car{
     }
 
     getCarInfo(){
-        console.log(`this car brand is ${this.brand} - it's name ${this.model} - it's model year is ${this.year} - and it has ${this.color} color` );
+        console.log(`This car brand is ${this.brand} - it's name ${this.model} - it's model year is ${this.year} - and it has ${this.color} color`);
         
     }
 
-    getCarAge(currentYear){
+    getCarAge(currentYear){o
         console.log(`${currentYear - this.year} Year's old`);
         
     }
 
-    
 }
 
 let car1 = new car("Toyota", "Camry", 2015, "Black");
@@ -31,4 +31,5 @@ car2.getCarAge(2024)
 
 car3.getCarInfo()
 car3.getCarAge(2024)
+
 
