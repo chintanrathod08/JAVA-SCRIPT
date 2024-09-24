@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing Function</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    
+    <!-- remix-icon     -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+        
+        
+      
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+       
+      }
+
+        body{
+            /* background-image: url(https://static.vecteezy.com/system/resources/previews/043/042/300/non_2x/ai-generated-a-neon-frame-glowing-with-purple-pink-light-on-dark-brick-wall-background-creating-an-empty-space-for-text-or-product-display-the-frame-is-a-rectangle-shape-for-advertising-and-banner-free-photo.jpg); */
+            background-image: url(https://images.unsplash.com/photo-1553649033-3fbc8d0fa3cb?ixlib=rb-4.0.3);
+            background-size: cover; 
+            background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.267);
+            position: relative;
+        }
+        #watch{
+            margin-top: 15%;
+            left: 40%;
+            top: 350px;
+            width: 400px;
+            height: 200px;
+            border-radius: 15px ;
+            background-color: rgba(0, 0, 0, 0.596);
+            
+            box-shadow: 2px 2px 10px 2px black;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+      h1{
+        color: white;
+       }
+
+      #sec1{
+        width: 100%;
+        height: 50%;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 30px;
+      }
+      
+      #sec2{
+        width: 100%;
+        height: 50%;
+        /* border: 1px solid red; */
+        align-items: center;
+        justify-content: space-evenly;
+        display: flex;
+        padding-top: 10px;
+      }
+      #sub1{
+        background-color: rgba(0, 0, 0, 0.432);
+        /* padding: 8px; */
+        width: 80px;
+        height: 80px;
+        padding-top: 10px;
+        border-radius: 12px;
+      }
+      h5{
+        color: white;
+        /* font-family: "Orbitron", sans-serif; */
+      }
+
+      .bt1,.bt2{
+        width: 100px;
+        height: 35px;
+        border-radius: 15px;
+        border: none;
+        font-size: 17px;
+    }
+
+      .bt1:hover{
+         background-color: rgb(255, 47, 0);
+        color: white;
+      }
+
+      .bt2:hover{
+        background-color: rgb(255, 47, 0);
+        color: white;
+      }
+    
+      .icon{
+        font-size: 19px;
+      }
+
+      #timer1,#timer2,#timer3{
+         font-family: "Orbitron", sans-serif;
+      }
+     
+      #hd{
+        position: absolute;
+        left: 36.5%;
+        top:  -50%;
+        font-size: 47px;
+        text-decoration: underline;
+        text-shadow: 3px 2px 3px rgb(0, 0, 0);
+      }
+    </style>
+</head>
+<body>
+    
+    <h1 id="hd">Stopwatch Timer</h1>
+<center>
+    
+    <div id="watch">
+
+        <div id="sec1">
+
+        <div id="sub1"><h1 id="timer1">00</h1>
+        <center><h5>Hours</h5></center></div>
+        <h1>:</h1>
+        <div id="sub1"><h1 id="timer2">00</h1>
+        <center><h5>Minutes</h5></center></div>
+        <h1>:</h1>
+        <div id="sub1"><h1 id="timer3">00</h1>
+        <center> <h5>Seconds</h5></center></div>
+        
+        
+        
+
+        </div>
+    
+        <div id="sec2">
+            <button id="start" class="bt1"><i class="ri-play-large-fill icon"></i>&nbsp;Start</button>
+            <button id="stop" class="bt2"><i class="ri-stop-large-fill icon"></i>&nbsp;Stop</button>
+        </div>
+
+    </div> 
+   
+</center>
+
+
+<script src="/script.js"></script>
+</body>
+</html>
