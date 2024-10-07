@@ -32,15 +32,15 @@
             background-image: url(https://images.unsplash.com/photo-1553649033-3fbc8d0fa3cb?ixlib=rb-4.0.3);
             background-size: cover; 
             background-blend-mode: overlay;
-            background-color: rgba(0, 0, 0, 0.267);
+            background-color: rgba(0, 0, 0, 0.292);
             position: relative;
         }
         #watch{
             margin-top: 15%;
             left: 40%;
             top: 350px;
-            width: 400px;
-            height: 200px;
+            width: 440px;
+            height: 250px;
             border-radius: 15px ;
             background-color: rgba(0, 0, 0, 0.596);
             
@@ -62,7 +62,9 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        padding-top: 30px;
+        padding-top: 35px;
+        padding-left: 35px;
+        padding-right: 35px;
       }
       
       #sec2{
@@ -72,7 +74,7 @@
         align-items: center;
         justify-content: space-evenly;
         display: flex;
-        padding-top: 10px;
+        /* padding-top: px; */
       }
       #sub1{
         background-color: rgba(0, 0, 0, 0.432);
@@ -81,7 +83,27 @@
         height: 80px;
         padding-top: 10px;
         border-radius: 12px;
+        box-shadow: 0px 0px 10px 2px #A3897B;
+        animation: ani;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
       }
+
+      @keyframes ani{
+        0%{
+          box-shadow: 0px 0px 2px 1px #A3897B;
+        }
+
+      
+       
+       
+        100%{
+          box-shadow: 0px 0px 15px 5px #A3897B;
+        }
+      }
+      
+
       h5{
         color: white;
         /* font-family: "Orbitron", sans-serif; */
@@ -90,23 +112,75 @@
       .bt1,.bt2{
         width: 100px;
         height: 35px;
-        border-radius: 15px;
+        border-radius: 50px;
         border: none;
         font-size: 17px;
+        z-index: 1;
+        overflow: hidden;
+        position: relative;
+      
     }
 
-      .bt1:hover{
-         background-color: rgb(255, 47, 0);
+      .bt1::after{
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        content: "";
+        width: 100%;
+        height: 0%;
+        background-color: #A3897B;
         color: white;
+        z-index: -1;
+      }
+
+      .bt1:hover::after{
+        height: 100%;
+        transition: 0.3s;
+        color: white;
+       }
+
+
+      .bt1:hover{
+        color: white;
+        box-shadow: 0px 0px 3px 1px  #A3897B;
+        cursor: pointer;
+      }
+
+      
+
+     
+    
+      .bt2::after{
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        content: "";
+        width: 100%;
+        height: 0%;
+        
+        background-color: #A3897B;
+        color: white;
+        z-index: -1;
+      }
+
+      .bt2:hover::after{
+        
+        height: 100%;
+        transition: 0.3s;
+        color: white;
+        
       }
 
       .bt2:hover{
-        background-color: rgb(255, 47, 0);
         color: white;
+        box-shadow: 0px 0px 3px 1px #A3897B;
+        cursor: pointer;
+        z-index: 1;
       }
-    
+
       .icon{
         font-size: 19px;
+        
       }
 
       #timer1,#timer2,#timer3{
@@ -116,7 +190,7 @@
       #hd{
         position: absolute;
         left: 36.5%;
-        top:  -50%;
+        top:  -45%;
         font-size: 47px;
         text-decoration: underline;
         text-shadow: 3px 2px 3px rgb(0, 0, 0);
