@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+#pro-card-1{
+    border: 1.5px solid rgba(67, 67, 67, 0.268);
+    border-radius: 7px;
+    padding: 10px;
+    height: 490px;
+    /* padding-top: 20px; */
+    padding-bottom: 15px;
+
+}
+#single_product_sec_1{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#title{
+    margin-left: 20px;
+    padding-top: 25px;
+    /* color: rgb(82, 82, 82); */
+}
+
+#price{
+    margin-left: 20px;
+    margin-top: 10px;
+    color: black;
+    font-size: 22px;
+}
+
+#rating{
+    text-align: center;
+    width: 18%;
+    color: white;
+    background-color: green;
+    padding: 1px;
+    border-radius: 7px;
+    margin-left: 3%;
+}
+
+
+
+
+#add{
+    width: 300px;
+    height: 35px;
+    background-color: orange;
+    margin-top: 5%;
+    border-radius: 10px;
+    color: white;
+    
+}
+
+#card{
+    cursor: pointer;
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card:hover #title{
+    text-decoration: underline;
+    color: blue;
+}
+
+
+
+#detailIcon{
+    color: green;
+}
+
+#pp{
+    font-size: 15px;
+    margin-top: 10px;
+    color: dimgray;
+}

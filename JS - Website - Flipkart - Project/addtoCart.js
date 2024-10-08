@@ -1,5 +1,5 @@
 
-fetch(`http://localhost:3000/addcart`)
+fetch(`https://render-js-tix7.onrender.com/addcart`)
     .then((res)=>{
         return res.json()
     })
@@ -17,23 +17,34 @@ fetch(`http://localhost:3000/addcart`)
 
 return arr.map((el)=>{
     return `<div id="card">
-                <div>
-                 <center>   <img id="image" src = "${el.imgURL}"/>
-                 </center>
-                </div>
-                <div>
-                    <p id="title">${el.title}</p>
-                    <p id="price">₹ ${el.price}</p>
-                    <p id="title1">${el.rating}</p>
 
-                     <button id="butt">Delete</button>
+                <div id="cartimg"> 
+                 <center>   <img id="image" src = "${el.imgURL}" width="150px" height="150px"/>
+                 </center>
+                 </div>
+
+
+                
+
+                <div id="adddeails">
+                    <p id="addtitle">${el.title}</p>
+                    <p id="addprice">₹ ${el.price}</p>
+                    <p id="addrating">${el.rating}</p>
+
+                     <button id="butt" onclick="remove(${el.id})">Delete</button>
                  
-                </div>
+                     </div>
+                
                 
             </div>`
 }).join("")
 
 }
+
+
+
+
+
 
 function remove(id){
     fetch(`http://localhost:3000/addcart/${id}`,{

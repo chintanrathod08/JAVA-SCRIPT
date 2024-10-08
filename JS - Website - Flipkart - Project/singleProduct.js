@@ -20,7 +20,7 @@ function FetchingData() {
 }
 
 function addToCart(res) {
-    fetch(`http://localhost:3000/addcart?id=${res[0].id}`)
+    fetch(`https://render-js-tix7.onrender.com/addcart?id=${res[0].id}`)
        
     .then((res) => {
             return res.json()
@@ -47,7 +47,7 @@ function addToCart(res) {
 
 
             } else {
-                fetch(`http://localhost:3000/addcart`, {
+                fetch(`https://render-js-tix7.onrender.com/addcart`, {
                     method: "POST",
                     headers: {
                         'Content-Type': "application/json"
@@ -78,17 +78,29 @@ FetchingData()
 function view(arr) {
 
     return arr.map((el) => {
-        return `<div id="card">
-            <div>
+        return `
+          <div id="card">
+            
               <center>  <img src = "${el.imgURL}"/> </center>
-            </div>
-            <div>
+        </div>            
+            <div id="prodetails">
+            
                 <p id="title">${el.title}</p>
                 <p id="price">₹ ${el.price}</p>
                 <p id="rating">${el.rating}</p>
-            </div>
-        </div>
-    <center>  <a href="addtoCart.html">  <button id="add"><i class="ri-shopping-cart-2-line"></i> Add to Cart</button> </center> </a>`
+               <br>
+
+               <p id="pp"><i class="ri-price-tag-3-fill" id="detailIcon"></i> Bank Offer5% Unlimited Cashback on Flipkart Axis Bank Credit CardT&C</p>
+                <p id="pp"><i class="ri-price-tag-3-fill" id="detailIcon"></i> Special PriceGet extra 80% off (price inclusive of cashback/coupon)T&C</p>
+               <p id="pp"><i class="ri-price-tag-3-fill" id="detailIcon"></i> Partner OfferMake a purchase and enjoy a surprise cashback/ coupon that you can redeem later!Know More</p>
+               <p id="pp"><i class="ri-calendar-check-fill" id="detailIcon"></i> No Cost EMI on Bajaj Finserv EMI Card on cart value above ₹2999T&C </p>
+
+
+                
+    
+    <center>    <button id="add"><i class="ri-shopping-cart-2-line"></i> Add to Cart</button> </center>
+    </div>
+    `
     
     }).join("")
 
