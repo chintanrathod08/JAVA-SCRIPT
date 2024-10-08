@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Online Shopping</title>
+
+    <!-- css-link.............. -->
+    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="loginPage.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="singleProduct.css">
+    <link rel="stylesheet" href="addtoCart.css">
+
+    <!-- google-font............... -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- fav-icon.................. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- remix-icon................ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap............ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
+    <!-- tailwind............ -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body>
+
+    <div class="head-line">
+
+        <div class="hw">
+            <marquee behavior="" direction="">
+                <i class="ri-circle-fill" style="font-size: 14px;"></i> <span class="hws">Grand Festive Sale is live!
+                    Get up to ₹500 OFF on top products. Shop Now!</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <i class="ri-circle-fill" style="font-size: 14px;"></i> <span class="hws">The Big Billion Days Sale 2024
+                    | From 27-Sep.-2024</span>
+            </marquee>
+        </div>
+
+    </div>
+
+    <!-- header....... -->
+    <header>
+        <div class="logo"><a href="index.html"><img src="Assets/fkheaderlogo_exploreplus-44005d.svg   " alt=""></a></div>
+
+        <div class="input-group">
+            <span class="input-group-text" id="basic-addon1"><i class="ri-search-2-line"></i></span>
+            <input type="text" class="form-control" placeholder="Search for Product, Brands and More"
+                aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="loginIcons">
+            <button class="lgb1"><i class="ri-user-3-line" style="font-size: 20px;"></i><a href="loginPage.html">Login</a>  <i
+                    class="ri-arrow-down-s-line licon1" style="font-size: 22px;"></i></button>
+            <button class="lgb2"><img src="/Assets/header_cart-eed150.svg" alt=""> Cart</button>
+            <button class="lgb3"><img src="/Assets/Store-9eeae2.svg" alt=""> Become a Seller</button>
+            <button><i class="ri-more-2-fill" style="font-size: 25px;"></i></button>
+        </div>
+    </header>
+
+
+
+    <!-- .section-1.............. -->
+
+    <div class="hero-section-1 flex justify-center	items-center">
+        <div class="h-sec-1 h-[80%] w-[97.5%] bg-[white]" style="border-radius: 7px;">
+
+            <div class="hs-11 grid grid-cols-10 h-[100%] gap-2">
+
+                <div class="flex flex-wrap justify-center items-center pt-2" style="cursor: pointer;">
+                    <div class="w-[100%] flex justify-center items-center"> <img
+                            src="/Assets/sec-1-images (1).jpg" alt="" class="hero-sec1-img"></div>
+                    <div class="w-[100%] pb-2">
+                        <center>
+                            <h6 style="font-size: 15px;">Beauty</h6>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-center items-center pt-2" style="cursor: pointer;">
+                    <div class="w-[100%] flex justify-center items-center"> <img
+                            src="/Assets/sec-1-images (2).jpg" alt="" class="hero-sec1-img"></div>
+                    <div class="w-[100%] pb-2">
+                        <center>
+                            <h6 style="font-size: 15px;">Electronics</h6>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-center items-center pt-2" style="cursor: pointer;">
+                    <div class="w-[100%] flex justify-center items-center"> <img
+                            src="/Assets/sec-1-images (3).jpg" alt="" class="hero-sec1-img"></div>
+                    <div class="w-[100%] pb-2">
+                        <center>
+                            <h6 style="font-size: 15px;">Home & Kitchen</h6>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-center items-center pt-2" style="cursor: pointer;">
+                    <div class="w-[100%] flex justify-center items-center"> <img
+                            src="/Assets/sec-1-images (4).jpg" alt="" class="hero-sec1-img"></div>
+                    <div class="w-[100%] pb-2">
+                        <center>
+                            <h6 style="font-size: 15px;">Fashion</h6>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-center items-center pt-2" style="cursor: pointer;">
+                    <div class="w-[100%] flex justify-center items-center"> <img
+                            src="/Assets/sec-1-images (5).jpg" alt="" class="hero-sec1-img"></div>
+                    <div class="w-[100%] pb-2">
+                        <center>
+                            <h6 style="font-size: 15px;">Mobiles & Tablets</h6>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-center items-center pt-2" style="cursor: pointer;">
+                    <div class="w-[100%] flex justify-center items-center"> <img
+                            src="/Assets/sec-1-images (6).jpg" alt="" class="hero-sec1-img"></div>
+                    <div class="w-[100%] pb-2">
+                        <center>
+                            <h6 style="font-size: 15px;">Travel</h6>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-center items-center pt-2" style="cursor: pointer;">
+                    <div class="w-[100%] flex justify-center items-center"> <img
+                            src="/Assets/sec-1-images (7).jpg" alt="" class="hero-sec1-img"></div>
+                    <div class="w-[100%] pb-2">
+                        <center>
+                            <h6 style="font-size: 15px;">Top Offers</h6>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-center items-center pt-2" style="cursor: pointer;">
+                    <div class="w-[100%] flex justify-center items-center"> <img
+                            src="/Assets/sec-1-images (8).jpg" alt="" class="hero-sec1-img"></div>
+                    <div class="w-[100%] pb-2">
+                        <center>
+                            <h6 style="font-size: 15px;">Furniture</h6>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-center items-center pt-2" style="cursor: pointer;">
+                    <div class="w-[100%] flex justify-center items-center"> <img
+                            src="/Assets/sec-1-images (10).jpg" alt="" class="hero-sec1-img"></div>
+                    <div class="w-[100%] pb-2">
+                        <center>
+                            <h6 style="font-size: 15px;">TVs & Appliances</h6>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-center items-center pt-2" style="cursor: pointer;">
+                   
+                    <div class="w-[100%] flex justify-center items-center"> <img
+                            src="/Assets/sec-1-images (9).jpg" alt="" class="hero-sec1-img"></div>
+                    <div class="w-[100%] pb-2">
+                        <center>
+                            <h6 style="font-size: 15px;">Grocery</h6>
+                        </center>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- .hero-slider............... -->
+
+<div class="hero-slider flex justify-center items-center">
+  
+    <div class="hero-sd w-[97.5%] h-[85%]" style="border-radius: 7px;">
+        
+        <button onclick="Prev()" class="sliderbt1"><i class="ri-arrow-left-s-line fs-3"></i></button>
+       
+        <div id="slider"><img src="Assets/slider-1 (8).jpg" alt=""></div>
+       
+        <button onclick="Next()" class="sliderbt2"><i class="ri-arrow-right-s-line fs-3"></i></button>
+
+    </div>
+     
+</div>
+
+<!-- .hero-section-4............. -->
+
+<div class="hero-section-3  w-[100%] h-[410px] bg-[#F1F2F4] flex justify-center items-center">
+        
+    <div class="w-[97.5%]  h-[88%]  bg-[white]" style="border-radius: 7px;">
+        
+        
+        <a href="product.html" >
+            <div class="fs-5 ps-3 pt-3" style="font-weight: 500;"><h1>Best Of Electronics</h1></div>
+
+            
+       
+        <div class="w-[100%] h-[285px]  mt-3 grid grid-cols-7 gap-3 ps-2 pe-2">
+
+            
+            <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                
+                <div class="flex justify-center items-center">
+                    <img src="Assets/1-Product-section-imgs (1).jpeg" alt="" class="hero-sec-3-imgs p-2">
+                </div>
+                
+                <div class="" style="font-size: 14px;">
+                    <center> <p class="fs-6 opacity-75" >Best Selling Mobile Speakers</p>
+                    <p style="font-weight: 500;">From ₹499*</p></center>
+                </div>
+            </div>
+
+
+            <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                
+                <div class="flex justify-center items-center">
+                    <img src="Assets/1-Product-section-imgs (2).jpeg" alt="" class="hero-sec-3-imgs p-2">
+                </div>
+                
+                <div class="" style="font-size: 14px;">
+                    <center> <p class="fs-6 opacity-75" style="margin-top: 51px;padding-left: 5px;" >Top Mirrorless Cameras</p>
+                        <p style="font-weight: 500;">Shop Now!</p></center>
+                </div>
+            </div>
+
+
+            <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                
+                <div class=" flex justify-center items-center">
+                    <img src="Assets/1-Product-section-imgs (3).jpeg" alt="" class="hero-sec-3-imgs p-2">
+                </div>
+                
+                <div class="" style="font-size: 14px;">
+                    <center> <p class="fs-6 opacity-75" style="margin-top: 55px;" >Projector</p>
+                    <p style="font-weight: 500;">From ₹6990</p></center>
+                </div>
+            </div>
+
+
+            <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                
+                <div class=" flex justify-center items-center">
+                    <img src="Assets/1-Product-section-imgs (4).jpeg" alt="" class="hero-sec-3-imgs p-2">
+                </div>
+                
+                <div class="" style="font-size: 14px;">
+                    <center> <p class="fs-6 opacity-75" >Best Truewireless Headphones</p>
+                    <p style="font-weight: 500;">Grap Now</p></center>
+                </div>
+            </div>
+
+
+            <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                
+                <div class=" flex justify-center items-center">
+                    <img src="Assets/1-Product-section-imgs (7).jpeg" alt="" class="hero-sec-3-imgs p-2">
+                </div>
+                
+                <div class="" style="font-size: 14px;">
+                    <center> <p class="fs-6 opacity-75"  style="margin-top: 50%;">ASUS Monitors</p>
+                    <p style="font-weight: 500;">From ₹14999</p></center>
+                </div>
+            </div>
+
+
+            <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                
+                <div class=" flex justify-center items-center">
+                    <img src="Assets/1-Product-section-imgs (6).jpeg.jpeg" alt="" class="hero-sec-3-imgs p-2">
+                </div>
+                
+                <div class="" style="font-size: 14px;">
+                    <center> <p class="fs-6 opacity-75"  style="margin-top: 37%;">Monitors</p>
+                    <p style="font-weight: 500;">From ₹6990</p></center>
+                </div>
+         </div>
+
+
+            <!-- <div class="hr-sec-3 " style="cursor: pointer;"> -->
+                
+            <!-- </div> -->
+
+        <img src="/Assets/Blender.jpeg" alt="" class="h-[280px]">
+   
+    </div>
+</a>
+    </div>
+
+ </div>
+
+
+    <!-- .hero-section-2................ -->
+    <div class="hero-section-2 w-[100%] h-[auto] flex  items-center justify-center ">
+        <div class="w-[97.5%] h-[auto] bg-[white] flex flex-wrap grid grid-cols-3 gap-4 pt-4 pb-4 ps-3 pe-3 bg-[#F1F2F4]" style="border-radius: 10px;">
+        <img src="/Assets/hero-sec-2-imgs (1).jpg" alt="" class="hero-sec-2-imgs">
+        <img src="/Assets/hero-sec-2-imgs (2).jpg" alt="" class="hero-sec-2-imgs">
+        <img src="/Assets/hero-sec-2-imgs (3).jpg" alt="" class="hero-sec-2-imgs">
+        <img src="/Assets/hero-sec-2-imgs (4).jpg" alt="" class="hero-sec-2-imgs">
+        <img src="/Assets/hero-sec-2-imgs (5).jpg" alt="" class="hero-sec-2-imgs">
+        <img src="/Assets/hero-sec-2-imgs (6).jpg" alt="" class="hero-sec-2-imgs">
+        <img src="/Assets/hero-sec-2-imgs (7).jpg" alt="" class="hero-sec-2-imgs">
+        <img src="/Assets/hero-sec-2-imgs(8).jpg" alt="" class="hero-sec-2-imgs">
+        <img src="/Assets/hero-sec-2-imgs (9).png" alt="" class="hero-sec-2-imgs">
+        <img src="/Assets/hero-sec-2-imgs (10).jpg" alt="" class="hero-sec-2-imgs">
+        <img src="/Assets/hero-sec-2-imgs (11).jpg" alt="" class="hero-sec-2-imgs">
+        <img src="/Assets/hero-sec-2-imgs(12).jpg" alt="" class="hero-sec-2-imgs">
+    </div>
+    </div>
+        
+
+    <!-- .hero-section-3............. -->
+
+    <div class="hero-section-3 w-[100%] h-[410px] bg-[#F1F2F4] flex justify-center items-center">
+        
+        <div class="w-[97.5%] h-[88%]  bg-[white]" style="border-radius: 7px;">
+            
+            <a href="product.html">
+            <div class="fs-5 ps-3 pt-3" style="font-weight: 500;"><h1>Trending Electronics</h1></div>
+            
+            <div class="w-[100%] h-[285px]  mt-3 grid grid-cols-7 gap-3 ps-2 pe-2">
+
+                
+                <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                    
+                    <div class="flex justify-center items-center">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/water-geyser/n/z/u/2023-25l-fiesta-2000-relaxo-25-original-imagueg6xkeebpgy.jpeg?q=70" alt="" class="hero-sec-3-imgs p-2">
+                    </div>
+                    
+                    <div class="" style="font-size: 14px;">
+                        <center> <p class="fs-6 opacity-75" >Relaxo 25 L Storage Water Geyser</p>
+                        <p style="font-weight: 500;"></p>₹4,299</center>
+                    </div>
+                </div>
+
+
+                <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                    
+                    <div class="flex justify-center items-center">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/flash/ring-flash/i/f/f/10-25-4-cm-professional-led-ring-light-with-tripod-stand-for-original-imahyaqr7enhqtvj.jpeg?q=70" alt="" class="hero-sec-3-imgs p-2">
+                    </div>
+                    
+                    <div class="" style="font-size: 14px;">
+                        <center> <p class="fs-6 opacity-75" > LED Ring Light for Camera</p>
+                            <p style="font-weight: 500;">₹599</p></center>
+                    </div>
+                </div>
+
+
+                <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                    
+                    <div class=" flex justify-center items-center">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/mousepad/l/q/0/gel-wrist-support-mouse-pad-gaming-mouse-pad-with-lycra-cloth-original-imahff7jtgxefgqv.jpeg?q=70" alt="" class="hero-sec-3-imgs p-2">
+                    </div>
+                    
+                    <div class="" style="font-size: 14px; margin-top: 55px;">
+                        <center> <p class="fs-6 opacity-75" >Mouse pad Gaming Mouse Pad</p>
+                        <p style="font-weight: 500;">₹240</p></center>
+                    </div>
+                </div>
+
+
+                <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                    
+                    <div class=" flex justify-center items-center">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/weighing-scale/8/b/u/bs260m-body-weighing-machine-180-kg-tempered-glass-lcd-display-original-imah2yux4kk6qdfe.jpeg?q=70" alt="" class="hero-sec-3-imgs p-2">
+                    </div>
+                    
+                    <div class="" style="font-size: 14px; margin-top: 55px;">
+                        <center> <p class="fs-6 opacity-75" >Digital Electronic Personal Weig...</p>
+                        <p style="font-weight: 500;">₹530</p></center>
+                    </div>
+                </div>
+
+
+                <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                    
+                    <div class=" flex justify-center items-center">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/bp-monitor/a/d/s/as9-as9-automatic-advance-feature-blood-pressure-monitoring-original-imahfhdchxut8vph.jpeg?q=70" alt="" class="hero-sec-3-imgs p-2">
+                    </div>
+                    
+                    <div class="" style="font-size: 14px; margin-top: 10px;">
+                        <center> <p class="fs-6 opacity-75" >FLOXIT Digital Kitchen Timer </p>
+                        <p style="font-weight: 500;">₹390</p></center>
+                    </div>
+                </div>
+
+
+                <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                    
+                    <div class=" flex justify-center items-center">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/ksez24w0/iron/b/8/e/majesty-dx-6-bajaj-original-imag5zqbxnpua52a.jpeg?q=70" alt="" class="hero-sec-3-imgs p-2">
+                    </div>
+                    
+                    <div class="" style="font-size: 14px; margin-top: 70px;">
+                        <center> <p class="fs-6 opacity-75" >DIGISMART by DIGISMART</p>
+                        <p style="font-weight: 500;">₹390</p></center>
+                    </div>
+                </div>
+
+
+                <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                    
+                    <div class=" flex justify-center items-center">
+                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/wet-grinder/b/g/s/mint-sowbaghya-2-original-imagwb8e9xprvh5p.jpeg?q=70" alt="" class="hero-sec-3-imgs p-2">
+                    </div>
+                    
+                    <div class="" style="font-size: 14px; margin-top: 55px;">
+                        <center><p class="fs-6 opacity-75" >Sowbaghya MINT Wet Grinder</p>
+                        <p style="font-weight: 500;">₹550</p></center>
+                    </div>
+                </div>
+
+
+
+            </div>
+         </a>
+        </div>
+
+     </div>
+
+     <!-- .hero-section-4.................... -->
+    <div class="hero-section-4 w-[100%] h-[770px] bg-[#F1F2F4] flex justify-center items-center">
+
+        <div class="w-[97.5%] h-[95%] bg-[white] " style="border-radius: 7px;">
+            
+            <div class="fs-5 ps-3 pt-3" style="font-weight: 500;"><h1>Featured Brands</h1></div>
+
+            <div class="w-[100%] h-[280px] mt-3 grid grid-cols-3 items-center gap-3 ps-4 pe-3">
+
+                <img src="/Assets/hero-sec-4-imgs (1).jpeg" alt="" style="cursor: pointer;" class="hs-imgs-4">
+                <img src="/Assets/hero-sec-4-imgs (2).jpeg" alt="" style="cursor: pointer;" class="hs-imgs-4">
+                <img src="/Assets/hero-sec-4-imgs(3).jpeg" alt="" style="cursor: pointer;" class="hs-imgs-4">
+
+            </div>
+
+          <!-- .................................. -->
+            <br>
+
+            <a href="product.html">
+            <div class="fs-5 ps-3 pt-3" style="font-weight: 500;"><h1>TVs & Appliances</h1></div>
+            
+            <div class="w-[100%] h-[285px]  mt-3 grid grid-cols-7 gap-3 ps-2 pe-2">
+
+                
+                <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                    
+                    <div class="flex justify-center items-center">
+                        <img src="Assets/Tv&app-sec-imgs (1).jpeg" alt="" class="hero-sec-3-imgs p-2">
+                    </div>
+                    
+                    <div class="" style="font-size: 14px;">
+                        <center> <p class="fs-6 opacity-75" >Top Load Washing Machines</p>
+                        <p style="font-weight: 500;">Buy Now</p></center>
+                    </div>
+                </div>  
+
+
+                <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                    
+                    <div class="flex justify-center items-center">
+                        <img src="Assets/Tv&app-sec-imgs (2).jpeg" alt="" class="hero-sec-3-imgs p-2">
+                    </div>
+                    
+                    <div class="" style="font-size: 14px;">
+                        <center> <p class="fs-6 opacity-75" >Front Load Washing Machines</p>
+                            <p style="font-weight: 500;">Buy Now</p></center>
+                    </div>
+                </div>
+
+
+                <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                    
+                    <div class=" flex justify-center items-center">
+                        <img src="Assets/Tv&app-sec-imgs (3).jpeg" alt="" class="hero-sec-3-imgs p-2">
+                    </div>
+                    
+                    <div class="" style="font-size: 14px;">
+                        <center> <p class="fs-6 opacity-75" >Double Door Refrigerator</p>
+                        <p style="font-weight: 500;">From ₹16,129</p></center>
+                    </div>
+                </div>
+
+
+                <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                    
+                    <div class=" flex justify-center items-center">
+                        <img src="Assets/Tv&app-sec-imgs (4).jpeg" alt="" class="hero-sec-3-imgs p-2">
+                    </div>
+                    
+                    <div class="" style="font-size: 14px;">
+                        <center> <p class="fs-6 opacity-75" >Godrej Refrigerator</p>
+                        <p style="font-weight: 500;">From ₹10,120</p></center>
+                    </div>
+                </div>
+
+
+                <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                    
+                    <div class=" flex justify-center items-center">
+                        <img src="Assets/Tv&app-sec-imgs (5).jpeg" alt="" class="hero-sec-3-imgs p-2">
+                    </div>
+                    
+                    <div class="" style="font-size: 14px;">
+                        <center> <p class="fs-6 opacity-75" >Big Washing Machines</p>
+                        <p style="font-weight: 500;">Buy Now</p></center>
+                    </div>
+                </div>
+
+
+                <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                    
+                    <div class=" flex justify-center items-center">
+                        <img src="Assets/Tv&app-sec-imgs (6).jpeg" alt="" class="hero-sec-3-imgs p-2">
+                    </div>
+                    
+                    <div class="" style="font-size: 14px;">
+                        <center> <p class="fs-6 opacity-75" >Samsung Refrigerator</p>
+                        <p style="font-weight: 500;">From ₹15,120</p></center>
+                    </div>
+                </div>
+
+
+                <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                    
+                    <div class=" flex justify-center items-center">
+                        <img src="Assets/Tv&app-sec-imgs (7).jpeg" alt="" class="hero-sec-3-imgs p-2">
+                    </div>
+                    
+                    <div class="" style="font-size: 14px;">
+                        <center><p class="fs-6 opacity-75" >Semi Automatic Washing Machines</p>
+                        <p style="font-weight: 500;">Buy Now</p></center>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </a>
+        </div>
+            
+    </div>
+
+
+    <!-- hero-section-5................ -->
+
+    <div class="hero-section-5 w-[100%] h-[320px] bg-[#F1F2F4]  flex justify-center items-center">
+        <div class="w-[97.5%] h-[90%] bg-[white] flex items-center ps-3 pe-3 grid grid-cols-3 gap-3" style="border-radius: 7px;">
+            <img src="/Assets/hero-sec-5-imgs (1).jpeg" alt="" style="cursor: pointer; border-radius: 7px;" class="hr-sec-5-imgs">
+            <img src="/Assets/hero-sec-5-imgs (1).jpg" alt="" style="cursor: pointer;  border-radius: 7px;" class="hr-sec-5-imgs">
+            <img src="/Assets/hero-sec-5-imgs (2).jpg" alt="" style="cursor: pointer;  border-radius: 7px;" class="hr-sec-5-imgs">
+        </div>
+    </div>
+
+
+    <!-- .hero-section-6................. -->
+    <div class="hero-section-6 w-[100%] h-[410px] bg-[#F1F2F4] flex justify-center items-center">
+        
+        <div class="w-[97.5%] h-[88%]  bg-[white]" style="border-radius: 7px;">
+            
+            <a href="product.html">
+            <div class="fs-5 ps-3 pt-3" style="font-weight: 500;"><h1>Deals On Smartphones</h1></div>
+            
+            <div class="w-[100%] h-[285px]  mt-3 grid grid-cols-7 gap-3 ps-2 pe-2">
+
+                
+                <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                    
+                    <div class="flex justify-center items-center">
+                        <img src="/Assets/hero-sec-3-imgs (1).jpeg" alt="" class="hero-sec-3-imgs p-2">
+                    </div>
+                    
+                    <div class="" style="font-size: 14px;">
+                        <center> <p class="fs-6 opacity-75" >Motorola g45 5G</p>
+                        <p style="font-weight: 500;">₹11,999</p></center>
+                    </div>
+                </div>
+
+
+                <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                    
+                    <div class="flex justify-center items-center">
+                        <img src="/Assets/hero-sec-3-imgs (2).jpeg" alt="" class="hero-sec-3-imgs p-2">
+                    </div>
+                    
+                    <div class="" style="font-size: 14px;">
+                        <center> <p class="fs-6 opacity-75" >SAMSUNG Galaxy A55</p>
+                            <p style="font-weight: 500;">₹45,999</p></center>
+                    </div>
+                </div>
+
+
+                <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                    
+                    <div class=" flex justify-center items-center">
+                        <img src="/Assets/hero-sec-3-imgs (3).jpeg" alt="" class="hero-sec-3-imgs p-2">
+                    </div>
+                    
+                    <div class="" style="font-size: 14px;">
+                        <center> <p class="fs-6 opacity-75" >Motorola Edge 50 Fusion</p>
+                        <p style="font-weight: 500;"></p>₹22,990</center>
+                    </div>
+                </div>
+
+
+                <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                    
+                    <div class=" flex justify-center items-center">
+                        <img src="/Assets/hero-sec-3-imgs (4).jpeg" alt="" class="hero-sec-3-imgs p-2">
+                    </div>
+                    
+                    <div class="" style="font-size: 14px;">
+                        <center> <p class="fs-6 opacity-75" >CMF by Nothing Phone</p>
+                        <p style="font-weight: 500;"></p>₹15,999</center>
+                    </div>
+                </div>
+
+
+                <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                    
+                    <div class=" flex justify-center items-center">
+                        <img src="/Assets/hero-sec-3-imgs (5).jpeg" alt="" class="hero-sec-3-imgs p-2">
+                    </div>
+                    
+                    <div class="" style="font-size: 14px;">
+                        <center> <p class="fs-6 opacity-75" >Motorola Edge 50 Fusion</p>
+                        <p style="font-weight: 500;">₹20,999</p></center>
+                    </div>
+                </div>
+
+
+                <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                    
+                    <div class=" flex justify-center items-center">
+                        <img src="/Assets/hero-sec-3-imgs (6).jpeg" alt="" class="hero-sec-3-imgs p-2">
+                    </div>
+                    
+                    <div class="" style="font-size: 14px;">
+                        <center> <p class="fs-6 opacity-75" >SAMSUNG Galaxy A35 5G</p>
+                        <p style="font-weight: 500;">₹25,999</p></center>
+                    </div>
+                </div>
+
+
+                <div class="hr-sec-3 border" style="border-radius: 10px;cursor: pointer;">
+                    
+                    <div class=" flex justify-center items-center">
+                        <img src="/Assets/hero-sec-3-imgs (7).jpeg" alt="" class="hero-sec-3-imgs p-2">
+                    </div>
+                    
+                    <div class="" style="font-size: 14px;">
+                        <center><p class="fs-6 opacity-75" >realme P1 5G</p>
+                        <p style="font-weight: 500;"></p>₹15,299</center>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </a>
+        </div>
+
+     </div>
+
+     <!-- <div class="hero-section-7..............."></div> -->
+
+     <div class="hero-section-7 w-[100%] h-[380px] bg-[#F1F2F4] flex justify-center items-center">
+        <div class="w-[97.5%] h-[90%] bg-[white] flex ps-3 pe-3 pt-3 pb-3 items-center grid grid-cols-4 gap-3" style="border-radius: 7px;">
+            
+           <img src="/Assets/hero-sec-7-imgs (9).jpg" alt="" style="border-radius: 7px;" class="hr-sec-7-imgs">
+           <img src="/Assets/hero-sec-7-imgs (7).jpg" alt="" style="border-radius: 7px;" class="hr-sec-7-imgs">
+           <img src="/Assets/hero-sec-7-imgs (8).jpg" alt="" style="border-radius: 7px;" class="hr-sec-7-imgs">
+           <img src="/Assets/hero-sec-7-imgs (6).jpg" alt="" style="border-radius: 7px;" class="hr-sec-7-imgs">
+           <img src="/Assets/hero-sec-7-imgs (10).jpg" alt="" style="border-radius: 7px;" class="hr-sec-7-imgs">
+           <img src="/Assets/hero-sec-7-imgs (11).jpg" alt="" style="border-radius: 7px;" class="hr-sec-7-imgs">
+           <img src="/Assets/hero-sec-7-imgs (12).jpg" alt="" style="border-radius: 7px;" class="hr-sec-7-imgs">
+           <img src="/Assets/hero-sec-7-imgs (13).jpeg" alt="" style="border-radius: 7px;" class="hr-sec-7-imgs">
+        </div>
+        
+     </div>
+
+     <div class="w-[100%] h-[50px] bg-[#F1F2F4]"></div>
+
+     <!-- footer............ -->
+    
+     <footer class="w-[100%] h-[500px] bg-[#212121] pt-4 pb-4 flex justify-center items-center flex-wrap">
+
+        <div id="ft-sec-1" class="w-[93%] h-[75%]  grid grid-cols-6 gap-3">
+            <div class=""><br>
+                <p class="text-white opacity-50">ABOUT</p><br>
+
+                 <i class="ri-arrow-right-s-fill text-white"></i>  <a href="" class="text-white" id="ft-a">About Us</a><br>
+                 <i class="ri-arrow-right-s-fill text-white"></i>  <a href="" class="text-white" id="ft-a">Contact Us</a><br>
+                 <i class="ri-arrow-right-s-fill text-white"></i>  <a href="" class="text-white" id="ft-a">Careers</a><br>
+                 <i class="ri-arrow-right-s-fill text-white"></i>  <a href="" class="text-white" id="ft-a">Flipkart Stories</a><br>
+                 <i class="ri-arrow-right-s-fill text-white"></i>  <a href="" class="text-white" id="ft-a">Press</a><br>
+                 <i class="ri-arrow-right-s-fill text-white"></i>  <a href="" class="text-white" id="ft-a">Corporate Information</a>
+                
+            </div>
+            <div class=""><br>
+                <p class="text-white opacity-50">GROUP COMPANIES</p><br>
+
+                  <i class="ri-arrow-right-s-fill text-white"></i> <a href="" class="text-white" id="ft-a">Myntra</a><br>
+                  <i class="ri-arrow-right-s-fill text-white"></i> <a href="" class="text-white" id="ft-a">Cleartrip</a><br>
+                  <i class="ri-arrow-right-s-fill text-white"></i> <a href="" class="text-white" id="ft-a">Shopsy</a><br>
+                
+                
+            </div>
+            <div class=""><br>
+                <p class="text-white opacity-50">HELP</p><br>
+
+                 <i class="ri-arrow-right-s-fill text-white"></i> <a href="" class="text-white" id="ft-a">Payments</a><br>
+                 <i class="ri-arrow-right-s-fill text-white"></i> <a href="" class="text-white" id="ft-a">Shipping</a><br>
+                 <i class="ri-arrow-right-s-fill text-white"></i> <a href="" class="text-white" id="ft-a">Cancellation & Returns</a><br>
+                 <i class="ri-arrow-right-s-fill text-white"></i> <a href="" class="text-white" id="ft-a">FAQs</a><br>
+                 <i class="ri-arrow-right-s-fill text-white"></i> <a href="" class="text-white" id="ft-a">Report Infringement</a><br>
+                
+            </div>
+            <div class=""><br>
+                <p class="text-white opacity-50">CONSUMER POLICY</p><br>
+
+                 <i class="ri-arrow-right-s-fill text-white"></i> <a href="" class="text-white" id="ft-a">Cancellation & Returns</a><br>
+                 <i class="ri-arrow-right-s-fill text-white"></i> <a href="" class="text-white" id="ft-a">Terms Of Use</a><br>
+                 <i class="ri-arrow-right-s-fill text-white"></i> <a href="" class="text-white" id="ft-a">Security</a><br>
+                 <i class="ri-arrow-right-s-fill text-white"></i> <a href="" class="text-white" id="ft-a">Privacy</a><br>
+                 <i class="ri-arrow-right-s-fill text-white"></i> <a href="" class="text-white" id="ft-a">Sitemap</a><br>
+                 <i class="ri-arrow-right-s-fill text-white"></i> <a href="" class="text-white" id="ft-a">EPR Compliance</a>
+                
+            </div>
+            <div class=""><br>
+                <p class="text-white opacity-50">Mail Us :</p><br>
+
+                <p class="text-white pe-4" id="ft-a">Flipkart Internet Private Limited,  Buildings Alyssa, Begonia &  Clove Embassy Tech Village, 
+                    Outer Ring Road, Devarabeesanahalli Village,  Bengaluru, 560103,  Karnataka, India
+                </p><br>
+
+                <p class="text-white opacity-50">Social Media : </p><br>
+                 <!-- <a href="https://www.flaticon.com/authors/pictogramer" title="pictogramer"> pictogramer </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div> -->
+
+                <div class="flex items-center"> <img src="/Assets/social-media.png" alt="" width="24px">
+                 <img src="/Assets/twitter.png" alt="" class="ms-2" width="24px">
+                 <img src="/Assets/youtube.png" alt="" class="ms-2" width="24px">
+                </div>
+            </div>
+            <div class=""><br>
+                <p class="text-white opacity-50">Registered Office Address :</p><br>
+
+                <p class="text-white pe-4" id="ft-a">Flipkart Internet Private Limited, 
+                    Buildings Alyssa, Begonia &  Clove Embassy Tech Village, 
+                    Outer Ring Road, Deva
+                    rabeesanahalli Village,  Bengaluru, 560103,  Karnataka, India 
+                     CIN : U51109KA2012PTC066107 
+                </p>
+                
+                
+            </div>
+        </div>
+
+        <div id="ft-sec-2" class="h-[13%] w-[90%] grid grid-cols-5 flex  items-center">
+            <div class="pt-2">
+                <!-- <img src="Assets/" alt=""> -->
+                <img src="Assets/fkheaderlogo_exploreplus-44005d.svg   " alt="">
+            </div>
+            <div class="flex items-center"><i class="ri-store-2-line fs-5" style="color: orange;"></i> <span class="text-white ms-2">Become a seller</span> </div>
+            <div class="flex items-center"><i class="ri-gift-line fs-5" style="color: orange;" ></i> <span class="text-white ms-2">Gift Cards</span></div>
+            <div class="flex items-center"><i class="ri-question-line fs-5" style="color: orange;"></i> <span class="text-white ms-2">Help Center</span></div>
+            <div class="flex items-center pe-5"><img src="/Assets/payment-method-c454fb.svg" alt="" height="55px"></div> 
+          
+        </div>
+        
+    </footer>
+
+    <script src="index-script.js"></script>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* background-color: #F1F2F4; */
+}
+
+.head-line{
+    width: 100%;
+    height: 35px;
+    /* border: 1px solid red; */
+    background-color: #2851E2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-line .hw{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+    line-height: 35px;
+    color: white;
+    
+}
+
+.head-line .hw .hws{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/*header........... */
+
+header{
+    width: 100%;
+    height: 68px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header .logo{
+    width: 14%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+}
+
+header .input-group{
+    height: 40px;
+    width: 40%;
+    /* background-color: #b8c5e0; */
+    
+}
+
+header .input-group .ri-search-2-line{
+    font-size: 18px;
+}
+
+header .input-group::placeholder{
+    font-size: 40px;
+}
+
+
+
+header  .loginIcons{
+    width: 32%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loginIcons .lgb1{
+    width: 115px;
+    height: 41px;
+    /* border: 1px solid red; */
+    border-radius: 8px;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lgb1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.lgb1:hover .licon1{
+    transition: 0.5s;
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+.lgb1:hover{
+    background-color: #2851E2;
+    color: white;
+}   
+
+
+
+.lgb1 a{
+    color: black;
+    text-decoration: none;
+}
+.lgb1:hover a{
+    color: white;
+}
+
+
+
+.loginIcons .lgb2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80px;
+    height: 41px;
+    /* border: 1px solid red;    */
+}
+
+.loginIcons .lgb3{
+    width: 190px;
+    height: 41px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+
+/* .hero-section-1........ */
+
+.hero-section-1{
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 170px;
+    background-color: #F1F2F4;
+}
+
+.hero-sec1-img:hover{
+    transform: scale(1.1);
+}
+
+/* .hero-slider.......... */
+
+.hero-slider{
+    width: 100%;
+    height: 275px;
+    /* border: 1px solid red; */
+    background-color: #F1F2F4;
+}
+
+.hero-sd{
+    position: relative;
+    overflow: hidden;
+}
+
+.sliderbt1{
+    position: absolute;
+    width: 43px;
+    top: 75px;
+    left: 0px;
+    height: 88px;
+    border-radius: 0px 7px 7px 0px;
+    background-color: white;
+}
+
+.sliderbt2{
+    position: absolute;
+    width: 43px;
+    top: 75px;
+    right: 0px;
+    height: 88px;
+    border-radius: 7px 0px 0px 7px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* hero-section-2........ */
+
+.hero-section-2{
+    background-color: #F1F2F4;
+}
+
+.hero-sec-2-imgs{
+    cursor: pointer; 
+    border-radius: 7px;
+}
+
+.hero-sec-2-imgs:hover{
+    box-shadow: 0px 0px 7px 3px rgb(105, 105, 105);
+    /* transform: scale(1.1); */
+}
+
+/* .hero-section-3........... */
+
+.hero-sec-3-imgs:hover{
+    transform: scale(0.9);
+}
+
+
+/* .hero-section-4....... */
+
+.hs-imgs-4{
+    border-radius: 7px;
+}
+
+.hs-imgs-4:hover{
+    box-shadow: 0px 0px 7px 3px rgb(105, 105, 105);
+}
+
+
+/* .hero-section-5......... */
+
+.hr-sec-5-imgs:hover{
+    box-shadow: 0px 0px 7px 3px rgb(105, 105, 105);
+
+}
+
+/* .hero-sec-7-imgs/........... */
+
+.hr-sec-7-imgs:hover{
+    box-shadow: 0px 0px 7px 3px rgb(105, 105, 105);
+    cursor: pointer;
+}
+
+
+
+/* .footer-section//////////////// */
+
+#ft-sec-2{
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: 1px solid rgb(118, 118, 118);
+   
+    
+}
+
+#ft-a{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#ft-a:hover{
+    text-decoration: underline;
+}
+
+

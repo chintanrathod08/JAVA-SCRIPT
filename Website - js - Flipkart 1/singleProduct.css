@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+#pro-card-1{
+    border: 1.5px solid rgba(67, 67, 67, 0.268);
+    border-radius: 7px;
+    padding: 10px;
+    height: 490px;
+    /* padding-top: 20px; */
+    padding-bottom: 15px;
+;
+}
+
+#title{
+    margin-left: 20px;
+    padding-top: 25px;
+}
+
+#price{
+    margin-left: 20px;
+    margin-top: 10px;
+    color: blue;
+}
+
+#rating{
+    margin-left: 20px;
+    color: orange;
+}
+
+
+#add{
+    width: 300px;
+    height: 35px;
+    background-color: orange;
+    margin-top: 25px;
+    border-radius: 10px;
+    color: white;
+}
+
+#card{
+    cursor: pointer;
+}
+
+#card:hover #title{
+    text-decoration: underline;
+    color: blue;
+}
