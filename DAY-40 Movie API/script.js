@@ -1,23 +1,53 @@
+let moviesName = document.getElementById("data")
+let select = document.getElementById("optiopn")
 
-fetch(`https://imdb-top-100-movies.p.rapidapi.com/`,{
-    method : 'GET',
-    headers : {
-        'content-type' : 'application/json',
-        'x-rapidapi-key': '785873bde5msha56df10d55cc5c7p15e7b3jsnbbac9099769a',
-		'x-rapidapi-host': 'imdb-top-100-movies.p.rapidapi.com'
+let display = "";
+if(moviesName.value == ""){
+    display = "money"; 
+} else {
+    display = moviesName.value;
+}
+
+(function() {
+    fetchData(display);
+})();
+
+moviesName.addEventListener("input",()=>{
+    if(moviesName.value){
+        fetchData(moviesName.value)
     }
-})
-.then((res)=>{
-    return res.json()
-})
-.then((res)=>{
-    document.getElementById("Movie_Box").innerHTML = view(res)
-})
-.catch((err)=>{
-    console.log(err);
     
 })
 
+select.addEventListener("change",()=>{
+    if(select.value){
+        fetchData(moviesName.value,select.value)
+    }
+})
+
+
+    function fetchData(movie,option="movie"){
+        
+    fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=74113840&s=${movie}&type=${option}`)
+    .then((res)=>{
+        return res.json()
+    })
+    .then((Res)=>{
+        console.log(Res)
+        document.getElementById("moviePoster").innerHTML = view(Res.Search)
+    })
+    .catch((Err)=>{
+        console.log(Err)
+    })
+}
+
 function view(arr){
-    return 
+    return arr.map((el)=>{
+        return `<div id="main">
+        <div id="img2">  <img src="${el.Poster}"  id="post"> </div>
+        <div id="details"> <center> <h4 id="h4">${el.Title}</h4> </center>
+        
+        </div>
+        </div>`
+    }).join(" ")
 }
