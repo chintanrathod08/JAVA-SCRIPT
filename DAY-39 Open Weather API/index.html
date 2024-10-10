@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }   
+
+
+        .main{
+            
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            /* background-image: url(https://images.pond5.com/twilight-mountains-nature-background-animation-footage-196879026_iconl.jpeg); */
+            /* background-image: url(https://wallpapercave.com/wp/ZzQWCHl.jpg); */
+            /* background-image: url(https://c0.wallpaperflare.com/preview/789/637/166/backlit-chiemsee-dawn-desktop-backgrounds.jpg); */
+            /* background-image: url(https://i.redd.it/hdgf0pj52x151.jpg); */
+            /* background-image: url(https://wallpapers.com/images/hd/weather-and-sky-ox5oo5bs2hbv7wz0.jpg); */
+            background-image: url(https://getwallpapers.com/wallpaper/full/e/8/2/1369455-full-size-best-weather-wallpaper-1920x1080.jpg);
+            /* background-position: center; */
+            background-size: cover;
+            background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.593);
+        }
+        #main2{
+            width: 500px;
+            height: 500px;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-top: 15px;
+            position: relative;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.166);
+            background-blend-mode: overlay;
+            color: white;
+            box-shadow: 0px 0px 3px 2px rgba(34, 34, 34, 0.629);
+            text-shadow: 2px 2px 3px black;
+        }
+
+        #h1{
+            font-size: 30px;
+            text-decoration: underline;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.705);
+        }
+        #data{
+            border: 1px solid white;
+            border-top: none;
+            border-left: none;
+            border-right: none ;
+            padding-left: 10px;
+            width: 250px;
+            height: 35px;
+            /* border-radius: 10px; */
+            /* padding-bottom: -10px; */
+            background: none;
+        }
+
+        #data::placeholder::first-letter{
+            text-transform: capitalize;
+        }
+
+        #check{
+            width: 120px;
+            border: 1px solid white;
+            border-radius: 7px;
+            height: 40px;
+
+            margin-left: 30px;
+            font-size: 18px;
+        }
+
+        #check:hover{
+          background-color: white ;  
+          color: black;
+            
+        }
+        
+        #descri{
+            position: absolute;
+            right: 10%;
+            bottom: 7%;
+            font-size: 22px;
+        }
+
+        #speed{
+            position: absolute;
+            left: 7%;
+            bottom: 7%;
+            font-size: 22px;
+
+        }
+        
+        #wtemp{
+            font-size: 35px;
+
+        }
+
+        #cityname{
+            font-size: 25px;
+            font-weight: 600;
+            
+        }
+        #sp{
+            text-decoration: underline;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+
+    <div class="main">
+    <center> <h1 class="w-[100%]" id="h1">Weather Forcast</h1>  <br>
+    
+        <div  id="main2">
+    
+    <input type="text" name="" id="data" placeholder="Enter any city name...">
+    
+    <button  id="check">Search <i class="ri-search-2-line ps-2"></i></button>
+    <div id="view"></div>
+</div>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
