@@ -1,16 +1,22 @@
 let moviesName = document.getElementById("data")
 let select = document.getElementById("optiopn")
-
 let display = "";
+
+
 if(moviesName.value == ""){
-    display = "money"; 
+    display = "marvel"; 
 } else {
     display = moviesName.value;
 }
 
-(function() {
-    fetchData(display);
-})();
+// (function() {
+//     fetchData(display);
+// })();
+
+fetchData(display)
+
+
+
 
 moviesName.addEventListener("input",()=>{
     if(moviesName.value){
@@ -34,7 +40,15 @@ select.addEventListener("change",()=>{
     })
     .then((Res)=>{
         console.log(Res)
-        document.getElementById("moviePoster").innerHTML = view(Res.Search)
+        if(Res.Response == 'False'){
+        document.getElementById("moviePoster").innerHTML = `<h1 id="wrong">😓 Opps! Somthing Wants Wrong ? <br> &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span> This Data Is Not Found </span><h1>
+                                                                        
+        `
+    }else{
+        document.getElementById("container").innerHTML = view(Res.Search)
+    }
     })
     .catch((Err)=>{
         console.log(Err)
@@ -43,10 +57,12 @@ select.addEventListener("change",()=>{
 
 function view(arr){
     return arr.map((el)=>{
-        return `<div id="main">
+        return `
+        <div id="main">
         <div id="img2">  <img src="${el.Poster}"  id="post"> </div>
-        <div id="details"> <center> <h4 id="h4">${el.Title}</h4> </center>
-        
+        <div id="details"> <h4 id="h4">${el.Title}</h4> 
+        <p>Yaer : ${el.Year} </p>
+         <p>Type : ${el.Type} </p>
         </div>
         </div>`
     }).join(" ")

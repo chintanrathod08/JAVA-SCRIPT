@@ -88,3 +88,26 @@
     bottom: 0%;
 }   
 
+
+.addbtn:hover{
+    transform: scale(0.9);
+    box-shadow: 0px 0px 10px 3px rgba(105, 105, 105, 0.459);
+}
+
+.cartnom{
+    background-color: #F5704D;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 10px;
+}
+
+.maincart{
+    position: relative;
+}

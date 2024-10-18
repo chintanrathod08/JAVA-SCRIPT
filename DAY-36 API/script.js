@@ -1,12 +1,11 @@
-fetch('https://fakestoreapi.com/products').then((r)=>{
+fetch('https://fakestoreapi.com/products')
+.then((r)=>{
     return r.json()
 }).then((res)=>{
   document.getElementById("Products").innerHTML = view(res)
 }).catch((err)=>{
     console.log(err)
 })
-
-
 
 function view(arr){
     return arr.map((Ele)=>{

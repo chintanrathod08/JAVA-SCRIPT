@@ -1,9 +1,8 @@
 function FetchingData() {
-    let data = new URLSearchParams(window.location.search)
-    let id = data.get("id")
+let data = new URLSearchParams(window.location.search)
+let id = data.get("id")
 
-
-    fetch(`https://render-js-tix7.onrender.com/product?id=${id}`)
+fetch(`http://localhost:3000/product?id=${id}`)
         .then((res) => {
             return res.json()
         })
@@ -19,8 +18,11 @@ function FetchingData() {
         })
 }
 
+
+FetchingData()
+
 function addToCart(res) {
-    fetch(`https://render-js-tix7.onrender.com/addcart?id=${res[0].id}`)
+    fetch(`http://localhost:3000/addcart?id=${res[0].id}`)
        
     .then((res) => {
             return res.json()
@@ -29,10 +31,8 @@ function addToCart(res) {
 
             console.log(Res);
             
-
-            if (Res.length > 0) {
-
-
+             if (Res.length > 0) {
+              
                 Swal.fire({
                     icon: "error",
                     title: "Oops...",
@@ -40,19 +40,18 @@ function addToCart(res) {
 
                     html: `
                     Go to This Page
-                     <a href="add_to_cart.html" autofocus   style="text-decoration: underline; color: blue;">Lets Check</a>,
-                    
-                   `,
+                    <a href="add_to_cart.html" autofocus   style="text-decoration: underline; color: blue;">Lets Check</a>,
+                    `,
                   });
 
 
             } else {
-                fetch(`https://render-js-tix7.onrender.com/addcart`, {
+                fetch(`http://localhost:3000/addcart`, {
                     method: "POST",
                     headers: {
                         'Content-Type': "application/json"
                     },
-                    body: JSON.stringify(res[0])
+                    body: JSON.stringify({...res[0],quantity : 1})
                 })
                     .then((Res) => {
                         return Res.json()
@@ -72,7 +71,6 @@ function addToCart(res) {
 }
 
 
-FetchingData()
 
 
 function view(arr) {

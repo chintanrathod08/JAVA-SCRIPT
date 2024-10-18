@@ -7,7 +7,7 @@ function fun(){
 
     let arr = [
         {
-            captcha : "6 o Y x 0 K";
+            captcha : "6 o Y x 0 K"
             
         },
     

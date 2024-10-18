@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        
+        h2{
+            /* text-decoration: underline; */
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          background-color: #0F1B27;
+          color: white;
+        }
+        .main{
+            width : 100%;
+            /* border-radius: 10px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+        }
+
+        form{
+            width: 450px;
+            /* border: 1px solid black; */
+            box-shadow: 0px 0px 10px 0px dimgray;
+            height:auto;
+            padding-top: 30px;
+            border-radius: 10px;
+            padding-bottom: 30px;
+            padding-left: 20px;
+        }
+
+        #go{
+            /* text-decoration: none; */
+            color: black;
+            font-size: 20px;
+
+        }
+
+       
+        input{
+            border-radius: 7px;
+            height: 30px;
+            width: 80%;
+            padding-left: 10px;
+        }
+        #data{
+            width: 120px;
+            height: 35px;
+            border-radius: 10px;
+            background-color: orangered;
+            color: white;
+            border: none;
+            font-size: 18px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    
+
+  <center><h2>Cook Book Application</h2></center>  <br> <br>
+
+  <br><br>
+  
+    <div class="main" >
+    <form action="">
+    <label for="">Enter Food ID :</label><br>
+    <input type="text" name="" id="id" placeholder="Enter Id"> <br><br>
+
+    <label for="">Food Img URL :</label><br>
+    <input type="text" id="img" placeholder="Enter Image URL"> <br><br> 
+
+    <label for="">Enter Food Title :</label><br>
+    <input type="text" id="title" placeholder="Enter Foodtitle"> <br><br>
+
+    <label for="">Enter Food Detailes :</label><br>
+    <input type="text" id="dis" placeholder="Enter Discription"> <br><br>
+    <button id="data">Submit</button> 
+    
+</form>
+   </div> <br><br>
+   
+   
+   <center><a href="singleProduct.html" id="go">Go to More Food Detailes</a> </center>
+    <script src="Product.js"></script>
+</body>
+</html>

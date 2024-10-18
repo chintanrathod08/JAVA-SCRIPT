@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SingleProduct</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        body{
+            padding-bottom: 30px;
+        }
+         
+         h2{
+            /* text-decoration: underline; */
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         background-color: #0F1B27;
+         color: white;
+         /* font-size: 20px; */
+        }
+        
+        .main2{
+            width: 100%;
+            height:auto;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        #singlePro{
+            width: 90%;
+            height: 600px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        #card{
+            border: 1px solid dimgray;
+            border-radius: 10px;
+            width: 280px;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        #mainimg{
+            border-radius: 10px ;
+            width: 300px;
+            height: 180px;
+        }
+        #IMG{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+        #DETAIL{
+            width: 100%;
+            height: 20%;
+            padding-top: 10px;
+        }
+        #edit{
+            width: auto;
+            background-color: orangered;
+            color: white;
+            width: 110px;
+            height: 35px;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        #delete{
+            width: auto;
+            background-color: orangered;
+            color: white;
+            width: 110px;
+            height: 35px;
+            border-radius: 10px;
+            margin-left: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <center><h2 style="font-size: 25px;">Cook Book Application</h2></center>  <br> <br>
+
+
+
+    <center> <a href="Product.html"> <h3 style="text-decoration: underline;color: black; font-size: 20px;"> Single Food Page</h3> </a></center>
+   
+   <br><br>
+   
+    <div class="main2">
+    <div id="singlePro" class="w-[100%] h-[auto] gird grid-cols-3 gap-3 flex justify-center align-center">
+
+    </div>
+
+</div>
+
+
+
+    <script src="singleProduct.js"></script>
+</body>
+</html>

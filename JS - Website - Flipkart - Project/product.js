@@ -1,4 +1,4 @@
-fetch(`https://render-js-tix7.onrender.com/product`)
+fetch(`http://localhost:3000/product`)
 .then((res)=>{
     return res.json()
 })

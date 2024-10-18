@@ -14,10 +14,7 @@ document.querySelector("#loginPage").addEventListener("submit",(ele)=>{
 
   let loginValid = true
 
- 
-  
-
-  if (loginMail.length == 0 ) {
+ if (loginMail.length == 0 ) {
     document.querySelector("#EmailloginText").innerText = "Please Enter valid email";
     document.getElementById("EmailloginText").style = "color :  orange"
     loginValid = false;
@@ -133,9 +130,6 @@ document.querySelector("#loginPage").addEventListener("submit",(ele)=>{
 
   })
 
-
-
-
   fetch('http://localhost:3000/username')
   .then((res)=>{
     return res.json()
@@ -147,6 +141,3 @@ document.querySelector("#loginPage").addEventListener("submit",(ele)=>{
     console.log(Err);
     
   })
-
-
-
